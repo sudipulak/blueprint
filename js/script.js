@@ -3,8 +3,9 @@ $(document).ready(function () {
     margin: 10,
     loop: true,
     autoWidth: true,
-    // autoplay: true,
-    autoplaySpeed: 2500,
+    autoplay: true,
+    autoplaySpeed: 3050,
+    autoplayTimeout: 3000,
     autoplayHoverPause: true,
     slideTransition: "linear",
   });
@@ -17,3 +18,35 @@ $(document).ready(function () {
     dots: true,
   });
 });
+
+// Wrap every letter in a span
+var textWrapper = document.querySelector(".ml7 .letters");
+textWrapper.innerHTML = textWrapper.textContent.replace(
+  /\S/g,
+  "<span class='letter'>$&</span>"
+);
+
+var textWrapper = document.querySelector(".ml8 .letters");
+textWrapper.innerHTML = textWrapper.textContent.replace(
+  /\S/g,
+  "<span class='letter'>$&</span>"
+);
+
+anime
+  .timeline({ loop: false })
+  .add({
+    targets: ".ml7 .letter",
+    translateY: ["1.1em", 0],
+    duration: 600,
+    easing: "linear",
+    opacity: 1,
+    delay: (el, i) => 50 * i,
+  })
+  .add({
+    targets: ".ml8 .letter",
+    translateY: ["1.1em", 0],
+    opacity: 1,
+    duration: 600,
+    easing: "linear",
+    delay: (el, i) => 50 * i,
+  });
