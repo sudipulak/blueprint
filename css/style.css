@@ -312,6 +312,7 @@ header .navigation .navbar li:last-of-type a:hover {
   -webkit-transform-origin: 0 100%;
           transform-origin: 0 100%;
   display: inline-block;
+  letter-spacing: -1px;
 }
 .banner .banner-title .ml8 .letter:nth-last-child(-n+4) {
   color: #017AFF;
