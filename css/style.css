@@ -418,7 +418,7 @@ header .navigation .navbar li:last-of-type a:hover {
   z-index: -1;
 }
 .services .branding-tab .background img.big-circle-bg {
-  bottom: 70px;
+  top: 105px;
   right: -30px;
   width: 300px;
   height: 300px;
@@ -517,7 +517,7 @@ header .navigation .navbar li:last-of-type a:hover {
   z-index: -1;
 }
 .services .digital-marketing-tab .background img.big-circle-bg {
-  bottom: 70px;
+  top: 105px;
   right: -30px;
   width: 300px;
   height: 300px;
@@ -565,7 +565,7 @@ header .navigation .navbar li:last-of-type a:hover {
   z-index: -1;
 }
 .services .business-solutions-tab .background img.big-circle-bg {
-  bottom: 70px;
+  top: 105px;
   right: -30px;
   width: 300px;
   height: 300px;
