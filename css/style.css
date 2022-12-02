@@ -246,6 +246,7 @@ header .navigation .navbar li:last-of-type a:hover {
 }
 
 .title {
+  overflow-y: hidden;
   text-align: center;
   margin-bottom: 86px;
 }
@@ -359,8 +360,10 @@ header .navigation .navbar li:last-of-type a:hover {
 .banner .banner-title {
   font-size: 64px;
   font-weight: 800;
-  line-height: 90px;
   color: #000;
+}
+.banner .banner-title p {
+  line-height: 1.2;
 }
 .banner .banner-title .text-wrapper {
   display: inline-block;
@@ -372,6 +375,7 @@ header .navigation .navbar li:last-of-type a:hover {
           transform-origin: 0 100%;
   display: inline-block;
   letter-spacing: -1px;
+  line-height: 1;
 }
 .banner .banner-title .ml8 .letter:nth-last-child(-n+4) {
   color: #017AFF;

@@ -37,7 +37,7 @@ anime
   .add({
     targets: ".ml7 .letter",
     translateY: ["1.1em", 0],
-    duration: 500,
+    duration: 900,
     easing: "easeInOutQuad",
     opacity: 1,
     delay: (el, i) => 50 * i,
@@ -46,7 +46,7 @@ anime
     targets: ".ml8 .letter",
     translateY: ["1.1em", 0],
     opacity: 1,
-    duration: 500,
+    duration: 900,
     easing: "easeInOutQuad",
     delay: (el, i) => 50 * i,
   });
