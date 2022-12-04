@@ -181,23 +181,17 @@ header .navigation .navbar li:last-of-type a:hover {
 @media screen and (max-width: 600px) {
   header.container {
     padding-top: 30px;
+    padding: 0 30px;
   }
   .navigation {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
   header .navigation .navbar {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    display: inline-block;
   }
-  header .navigation .navbar a {
-    padding-left: 0;
-    margin-right: 30px;
+  header .navigation .navbar .nav-item {
+    display: none;
   }
 }
 .nav-tabs.vertical-tab {
