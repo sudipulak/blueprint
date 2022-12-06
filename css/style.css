@@ -786,15 +786,15 @@ header .navigation .navbar li:last-of-type a:hover {
   border: 1px solid #CCE4FF;
   -webkit-box-shadow: 0px 15px 20px rgba(1, 122, 255, 0.03);
           box-shadow: 0px 15px 20px rgba(1, 122, 255, 0.03);
-  padding: 75px 110px;
+  padding: 63px 110px;
   margin: auto;
 }
 .client-reviews .item .img-box {
-  max-width: 170px;
+  max-width: 180px;
   margin-right: 30px;
 }
 .client-reviews .item .img-box img {
-  width: 100%;
+  width: 170px;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
@@ -827,6 +827,7 @@ header .navigation .navbar li:last-of-type a:hover {
 .client-reviews .item .review-description .profile .img-box {
   height: 62px;
   width: 62px;
+  margin-right: 18px;
   border-radius: 50%;
   overflow: hidden;
 }
@@ -837,7 +838,7 @@ header .navigation .navbar li:last-of-type a:hover {
      object-fit: cover;
 }
 .client-reviews .item .review-description .profile .info p:nth-of-type(1) {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   color: #000C19;
@@ -1026,13 +1027,12 @@ header .navigation .navbar li:last-of-type a:hover {
 footer {
   background: #fff;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  padding-top: 80px;
-  padding-bottom: 25px;
+  padding-top: 45px;
+  padding-bottom: 45px;
 }
 footer .img-box {
   width: 135px;
   height: 35px;
-  margin-bottom: 40px;
 }
 footer .img-box img {
   height: 100%;
@@ -1040,25 +1040,39 @@ footer .img-box img {
   -o-object-fit: cover;
      object-fit: cover;
 }
-footer h4 {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
-  color: #000C19;
-  margin-bottom: 10px;
-}
-footer li,
-footer p {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 22px;
-  color: #808080;
-}
-footer .social-icons {
-  margin-top: 40px;
+footer .footer-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+}
+footer .footer-menu li {
+  list-style: none;
+}
+footer .footer-menu li a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #808080;
+  line-height: 30px;
+  padding: 0 20px;
+}
+footer .footer-menu li a.active {
+  font-size: 16px;
+  font-weight: 700;
+  color: #00004B;
+  line-height: 24px;
+  border-right: 1px solid #ccc;
+}
+footer .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1074,28 +1088,6 @@ footer .social-icons a:hover {
 }
 footer .social-icons a:hover svg path {
   fill: #017AFF;
-}
-footer .footer-menu {
-  margin-left: 20px;
-}
-footer .footer-menu h4 {
-  margin-bottom: 15px;
-}
-footer .footer-menu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-footer .footer-menu ul li {
-  margin-bottom: 10px;
-}
-footer .footer-menu ul li a {
-  color: inherit;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-footer .footer-menu ul li a:hover {
-  color: #017AFF;
 }
 footer .copy-right {
   margin-top: 30px;
@@ -1146,9 +1138,8 @@ footer .copy-right p {
   .client-reviews .owl-carousel .owl-nav {
     display: none;
   }
-  footer .img-box,
-footer .footer-menu {
-    margin: 20px 0;
+  footer .footer-menu {
+    margin-top: 20px;
   }
 }
 @media screen and (max-width: 650px) {
@@ -1193,6 +1184,30 @@ footer .footer-menu {
   .cta .img-box {
     margin: 0 0 20px 0;
   }
+  footer .social-icons {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin-top: 20px;
+  }
+  footer .footer-menu {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  footer .footer-menu li {
+    width: 50%;
+  }
+  footer .footer-menu li a {
+    padding-left: 0;
+    display: inline-block;
+    padding-bottom: 10px;
+  }
+  footer .footer-menu li a.active {
+    border: none;
+  }
 }
 @media screen and (max-width: 400px) {
   .nav-tabs {
@@ -1207,6 +1222,133 @@ footer .footer-menu {
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+}
+.contact {
+  position: relative;
+  padding: 100px 0;
+  color: #333333;
+}
+.contact .background {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0;
+}
+.contact h1 {
+  max-width: 573px;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 66px;
+  margin-bottom: 50px;
+}
+.contact form {
+  max-width: 778px;
+}
+.contact form label {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #333;
+}
+.contact form input {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  height: 50px;
+  margin-bottom: 30px;
+  background: #f7f7f7;
+  border: none;
+}
+.contact form input:focus {
+  background: #f7f7f7;
+  outline: none;
+  -webkit-box-shadow: 0 0 0 0 transparent;
+          box-shadow: 0 0 0 0 transparent;
+}
+.contact form input::-webkit-input-placeholder {
+  color: #A2A4A6;
+}
+.contact form input::-moz-placeholder {
+  color: #A2A4A6;
+}
+.contact form input:-ms-input-placeholder {
+  color: #A2A4A6;
+}
+.contact form input::-ms-input-placeholder {
+  color: #A2A4A6;
+}
+.contact form input::placeholder {
+  color: #A2A4A6;
+}
+.contact form textarea {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 30px;
+  background: #f7f7f7;
+  resize: none;
+  border: none;
+}
+.contact form textarea:focus {
+  background: #f7f7f7;
+  outline: none;
+  -webkit-box-shadow: 0 0 0 0 transparent;
+          box-shadow: 0 0 0 0 transparent;
+}
+.contact form textarea::-webkit-input-placeholder {
+  color: #A2A4A6;
+}
+.contact form textarea::-moz-placeholder {
+  color: #A2A4A6;
+}
+.contact form textarea:-ms-input-placeholder {
+  color: #A2A4A6;
+}
+.contact form textarea::-ms-input-placeholder {
+  color: #A2A4A6;
+}
+.contact form textarea::placeholder {
+  color: #A2A4A6;
+}
+.contact form .btn {
+  max-width: 183px;
+  margin: 0 12px;
+}
+
+@media screen and (max-width: 992px) {
+  .contact .background {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contact h1 {
+    font-size: 30px;
+    line-height: 42px;
+  }
+}
+.thankyou {
+  max-width: 700px;
+  margin: auto;
+  padding: 60px 100px;
+  text-align: center;
+}
+.thankyou h1 {
+  font-weight: 900;
+}
+.thankyou p {
+  font-size: 16px;
+  margin-top: 20px;
+  color: #808080;
+}
+.thankyou .btn {
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 600px) {
+  .thankyou {
+    padding: 60px 10px;
   }
 }
 h1,
