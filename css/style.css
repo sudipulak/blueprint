@@ -1132,6 +1132,9 @@ footer .copy-right p {
   }
 }
 @media screen and (max-width: 650px) {
+  .banner .background {
+    display: none;
+  }
   .banner .banner-title {
     font-size: 35px;
     line-height: 1.2;
@@ -1356,6 +1359,8 @@ p {
 }
 
 body {
+  width: 100vw;
+  overflow-x: hidden;
   font-family: Manrope, sans-serif;
   font-size: 18px;
   font-weight: 400;
