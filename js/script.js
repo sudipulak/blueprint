@@ -16,6 +16,7 @@ $(document).ready(function () {
     nav: true,
     navText: ["<", ">"],
     dots: true,
+    autoHeight: true,
   });
 });
 

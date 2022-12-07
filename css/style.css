@@ -130,6 +130,10 @@
 }
 
 @media screen and (max-width: 600px) {
+  .btn.btn-primary,
+.btn.btn-outline {
+    display: block;
+  }
   .btn.btn-outline {
     margin-top: 10px;
     margin-left: 0;
@@ -226,6 +230,7 @@ header .navigation .navbar li:last-of-type a:hover {
   font-size: 44px;
   line-height: 60px;
   border-color: transparent;
+  background: transparent;
 }
 
 .vertical-tab-content .tab-pane.fade {
@@ -239,6 +244,18 @@ header .navigation .navbar li:last-of-type a:hover {
           transform: translateX(0);
 }
 
+@media screen and (max-width: 600px) {
+  .nav-tabs .nav-link {
+    font-size: 25px;
+    line-height: 0;
+    padding: 0 !important;
+    margin: 35px 0;
+  }
+  .nav-tabs .nav-link.active {
+    font-size: 30px;
+    margin: 0;
+  }
+}
 .title {
   overflow-y: hidden;
   text-align: center;
@@ -263,9 +280,12 @@ header .navigation .navbar li:last-of-type a:hover {
   }
 }
 @media screen and (max-width: 650px) {
+  .title {
+    margin-bottom: 30px;
+  }
   .title h2 {
-    font-size: 25px;
-    line-height: 52px;
+    font-size: 22px;
+    line-height: 50px;
   }
 }
 .banner {
@@ -1068,6 +1088,17 @@ footer .copy-right p {
   }
 }
 @media screen and (max-width: 992px) {
+  .services,
+.client-reviews {
+    padding: 50px 0;
+  }
+  .services .tab-content {
+    margin-top: 40px;
+  }
+  .projects.container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
   .projects .project .img-box {
     text-align: left;
     -webkit-transform: rotate(0deg) scale(1);
@@ -1089,6 +1120,9 @@ footer .copy-right p {
   .projects .project .project-description h2 {
     font-size: 35px;
     line-height: 42px;
+  }
+  .client-reviews .item {
+    padding: 60px;
   }
   .client-reviews .owl-carousel .owl-nav {
     display: none;
@@ -1112,15 +1146,22 @@ footer .copy-right p {
     padding-top: 60px;
     padding-bottom: 60px;
   }
-  .nav-tabs .nav-link {
-    font-size: 25px;
-    line-height: 0;
-    padding: 0 !important;
-    margin: 25px 0;
+  .services .background,
+.projects .background {
+    display: none;
+  }
+  .services .tab-content .img-box {
+    height: auto;
+  }
+  .projects .project:last-child {
+    margin-bottom: 0;
   }
   .projects .project .project-description h2 {
     font-size: 25px;
     line-height: 30px;
+  }
+  .client-reviews .owl-carousel .owl-item {
+    height: auto;
   }
   .client-reviews .item {
     -ms-flex-wrap: wrap;
