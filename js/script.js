@@ -22,6 +22,7 @@ $(document).ready(function () {
   if (window.innerWidth < 600) {
     $(".title h3").data("aos-offset", "0");
     $(".title h2").data("aos-offset", "0");
+    $(".title h2").data("aos", "");
     $("div").data("aos-offset", "0");
     $("div").data("aos-delay", "0");
   }
