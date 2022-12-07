@@ -801,9 +801,11 @@
     <!-- data aos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      AOS.init({
-        once: true,
-      });
+      if (window.innerWidth > 600) {
+        AOS.init({
+          once: true,
+        });
+      }
     </script>
     <!-- Anime Js  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
