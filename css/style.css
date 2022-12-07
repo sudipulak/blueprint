@@ -411,6 +411,9 @@ header .navigation .navbar li:last-of-type a:hover {
   padding-bottom: 80px;
   overflow: hidden;
 }
+.services .nav-tabs li:last-child button {
+  margin-bottom: 0;
+}
 .services .web-design-tab {
   position: relative;
 }
