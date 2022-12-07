@@ -51,3 +51,7 @@ anime
     easing: "easeInOutQuad",
     delay: (el, i) => 50 * i,
   });
+
+if (window.innerWidth < 600) {
+  $(div).data("aos-offset", "300");
+}
