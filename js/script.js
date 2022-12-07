@@ -53,8 +53,8 @@ anime
   });
 
 if (window.innerWidth < 600) {
-  $(".title h3").data("aos-offset", "300");
-  $(".title h2").data("aos-offset", "300");
-  $("div").data("aos-offset", "300");
-  $(".container").data("aos-offset", "100");
+  $(".title h3").data("aos-offset", "0");
+  $(".title h2").data("aos-offset", "0");
+  $("div").data("aos-offset", "0");
+  $("div").data("aos-delay", "0");
 }
