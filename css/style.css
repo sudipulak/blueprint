@@ -497,7 +497,7 @@ header .navigation .navbar li:last-of-type a:hover {
 .services .branding-tab .img-box {
   max-width: 550px;
   height: 320px;
-  margin: 0 auto 100px;
+  margin: 0 auto;
 }
 .services .branding-tab .img-box img {
   width: 100%;
@@ -596,7 +596,7 @@ header .navigation .navbar li:last-of-type a:hover {
 .services .digital-marketing-tab .img-box {
   max-width: 550px;
   height: 320px;
-  margin: 0 auto 100px;
+  margin: 0 auto;
 }
 .services .digital-marketing-tab .img-box img {
   width: 100%;
@@ -644,7 +644,7 @@ header .navigation .navbar li:last-of-type a:hover {
 .services .business-solutions-tab .img-box {
   max-width: 550px;
   height: 320px;
-  margin: 0 auto 100px;
+  margin: 0 auto;
 }
 .services .business-solutions-tab .img-box img {
   width: 100%;
