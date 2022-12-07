@@ -228,7 +228,6 @@ header .navigation .navbar li:last-of-type a:hover {
   color: #00004B;
   opacity: 1;
   font-size: 44px;
-  line-height: 60px;
   border-color: transparent;
   background: transparent;
 }
@@ -244,6 +243,11 @@ header .navigation .navbar li:last-of-type a:hover {
           transform: translateX(0);
 }
 
+@media screen and (max-width: 1024px) {
+  .nav-tabs .nav-link {
+    font-size: 30px;
+  }
+}
 @media screen and (max-width: 600px) {
   .nav-tabs .nav-link {
     font-size: 25px;
@@ -253,7 +257,6 @@ header .navigation .navbar li:last-of-type a:hover {
   }
   .nav-tabs .nav-link.active {
     font-size: 30px;
-    margin: 0;
   }
 }
 .title {
@@ -1077,9 +1080,6 @@ footer .copy-right p {
 }
 
 @media screen and (max-width: 1024px) {
-  .nav-tabs .nav-link {
-    font-size: 30px;
-  }
   .client-reviews .owl-carousel .owl-nav .owl-prev {
     left: -60px;
   }
