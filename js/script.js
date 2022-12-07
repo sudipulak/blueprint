@@ -18,6 +18,13 @@ $(document).ready(function () {
     dots: true,
     autoHeight: true,
   });
+  // for responsive data aos scroll animation remove
+  if (window.innerWidth < 600) {
+    $(".title h3").data("aos-offset", "0");
+    $(".title h2").data("aos-offset", "0");
+    $("div").data("aos-offset", "0");
+    $("div").data("aos-delay", "0");
+  }
 });
 
 // Wrap every letter in a span
@@ -51,10 +58,3 @@ anime
     easing: "easeInOutQuad",
     delay: (el, i) => 50 * i,
   });
-
-if (window.innerWidth < 600) {
-  $(".title h3").data("aos-offset", "0");
-  $(".title h2").data("aos-offset", "0");
-  $("div").data("aos-offset", "0");
-  $("div").data("aos-delay", "0");
-}

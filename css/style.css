@@ -1358,12 +1358,13 @@ p {
   padding: 0;
 }
 
+html,
 body {
   width: 100vw;
-  overflow-x: hidden;
   font-family: Manrope, sans-serif;
   font-size: 18px;
   font-weight: 400;
+  overflow-x: hidden !important;
 }
 
 a {
