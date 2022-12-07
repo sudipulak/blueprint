@@ -1142,6 +1142,9 @@ footer .copy-right p {
   .banner .banner-title .ml8 {
     white-space: nowrap;
   }
+  .banner .banner-title .letter {
+    opacity: 1;
+  }
   .services.container,
 .projects.container,
 .client-reviews.container,

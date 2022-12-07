@@ -18,14 +18,6 @@ $(document).ready(function () {
     dots: true,
     autoHeight: true,
   });
-  // for responsive data aos scroll animation remove
-  if (window.innerWidth < 600) {
-    $(".title h3").data("aos-offset", "0");
-    $(".title h2").data("aos-offset", "0");
-    $(".title h2").data("aos", "");
-    $("div").data("aos-offset", "0");
-    $("div").data("aos-delay", "0");
-  }
 });
 
 // Wrap every letter in a span
@@ -40,22 +32,23 @@ textWrapper.innerHTML = textWrapper.textContent.replace(
   /\S/g,
   "<span class='letter'>$&</span>"
 );
-
-anime
-  .timeline({ loop: false })
-  .add({
-    targets: ".ml7 .letter",
-    translateY: ["1.1em", 0],
-    duration: 900,
-    easing: "easeInOutQuad",
-    opacity: 1,
-    delay: (el, i) => 50 * i,
-  })
-  .add({
-    targets: ".ml8 .letter",
-    translateY: ["1.1em", 0],
-    opacity: 1,
-    duration: 900,
-    easing: "easeInOutQuad",
-    delay: (el, i) => 50 * i,
-  });
+if (window.innerWidth > 600) {
+  anime
+    .timeline({ loop: false })
+    .add({
+      targets: ".ml7 .letter",
+      translateY: ["1.1em", 0],
+      duration: 900,
+      easing: "easeInOutQuad",
+      opacity: 1,
+      delay: (el, i) => 50 * i,
+    })
+    .add({
+      targets: ".ml8 .letter",
+      translateY: ["1.1em", 0],
+      opacity: 1,
+      duration: 900,
+      easing: "easeInOutQuad",
+      delay: (el, i) => 50 * i,
+    });
+}
