@@ -279,13 +279,10 @@ header .navigation .navbar li:last-of-type a:hover {
 
 @media screen and (max-width: 768px) {
   .title {
-    margin-bottom: 60px;
+    margin-bottom: 80px;
   }
 }
 @media screen and (max-width: 650px) {
-  .title {
-    margin-bottom: 30px;
-  }
   .title h2 {
     font-size: 22px;
     line-height: 50px;
@@ -470,17 +467,16 @@ header .navigation .navbar li:last-of-type a:hover {
   border-radius: 50%;
 }
 .services .web-design-tab .img-box {
-  max-width: 590px;
+  max-width: 100%;
   height: 452px;
-  margin-right: auto;
 }
 .services .web-design-tab .img-box img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-  -o-object-position: center;
-     object-position: center;
+  -o-object-position: top center;
+     object-position: top center;
 }
 .services .web-design-tab p {
   font-size: 16px;
@@ -521,17 +517,17 @@ header .navigation .navbar li:last-of-type a:hover {
   border-radius: 50%;
 }
 .services .branding-tab .img-box {
-  max-width: 550px;
-  height: 320px;
-  margin: 30px auto 0;
+  max-width: 100%;
+  height: 385px;
+  margin: 10px auto 0;
 }
 .services .branding-tab .img-box img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-  -o-object-position: top;
-     object-position: top;
+  -o-object-position: top center;
+     object-position: top center;
 }
 .services .branding-tab p {
   font-size: 16px;
@@ -572,17 +568,16 @@ header .navigation .navbar li:last-of-type a:hover {
   border-radius: 50%;
 }
 .services .ecommerce-tab .img-box {
-  max-width: 590px;
+  max-width: 100%;
   height: 452px;
-  margin-right: auto;
 }
 .services .ecommerce-tab .img-box img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-  -o-object-position: center;
-     object-position: center;
+  -o-object-position: top center;
+     object-position: top center;
 }
 .services .ecommerce-tab p {
   font-size: 16px;
@@ -620,17 +615,17 @@ header .navigation .navbar li:last-of-type a:hover {
   border-radius: 50%;
 }
 .services .digital-marketing-tab .img-box {
-  max-width: 550px;
-  height: 320px;
-  margin: 30px auto 0;
+  max-width: 100%;
+  height: 385px;
+  margin: 10px auto 0;
 }
 .services .digital-marketing-tab .img-box img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-  -o-object-position: top;
-     object-position: top;
+  -o-object-position: top center;
+     object-position: top center;
 }
 .services .digital-marketing-tab p {
   font-size: 16px;
@@ -664,6 +659,11 @@ header .navigation .navbar li:last-of-type a:hover {
 .projects .background img.square-bg:nth-of-type(2) {
   top: 880px;
   right: 0;
+}
+.projects .background img.square-bg:nth-of-type(3) {
+  display: none;
+  top: 900px;
+  left: 0;
 }
 .projects .project {
   margin-bottom: 40px;
@@ -906,6 +906,7 @@ header .navigation .navbar li:last-of-type a:hover {
   padding-top: 80px;
   padding-bottom: 80px;
   position: relative;
+  overflow: hidden;
 }
 .cta .background img {
   position: absolute;
@@ -1006,7 +1007,7 @@ footer {
   background: #fff;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   padding-top: 45px;
-  padding-bottom: 45px;
+  padding-bottom: 16px;
 }
 footer .img-box {
   width: 135px;
@@ -1132,8 +1133,28 @@ footer .copy-right p {
   }
 }
 @media screen and (max-width: 650px) {
-  .banner .background {
-    display: none;
+  .banner.container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .banner .background img.bottom-cube,
+.banner .background img.top-cube {
+    position: absolute;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    width: 197px;
+    height: 201px;
+    opacity: 60%;
+    -webkit-animation: none;
+            animation: none;
+  }
+  .banner .background img.top-cube {
+    top: 30px;
+    left: 143px;
+  }
+  .banner .background img.bottom-cube {
+    top: 97px;
+    left: 62px;
   }
   .banner .banner-title {
     font-size: 35px;
@@ -1145,6 +1166,9 @@ footer .copy-right p {
   .banner .banner-title .letter {
     opacity: 1;
   }
+  .slider-wrapper .item {
+    height: 405px;
+  }
   .services,
 .projects.container,
 .client-reviews,
@@ -1152,12 +1176,61 @@ footer .copy-right p {
     padding-top: 70px;
     padding-bottom: 70px;
   }
-  .services .background,
-.projects .background {
-    display: none;
+  .services .tab-content {
+    margin-top: 65px;
   }
   .services .tab-content .img-box {
     height: auto;
+  }
+  .services .background img.shadow-bg {
+    display: none;
+  }
+  .services .web-design-tab .background img.big-circle-bg,
+.services .ecommerce-tab .background img.big-circle-bg {
+    height: 130px;
+    width: 130px;
+    top: -48px;
+    right: 0px;
+  }
+  .services .web-design-tab .background img.small-circle-bg,
+.services .ecommerce-tab .background img.small-circle-bg {
+    bottom: -57px;
+    right: 163px;
+    width: 182px;
+    height: 182px;
+  }
+  .services .branding-tab .background img.big-circle-bg,
+.services .digital-marketing-tab .background img.big-circle-bg {
+    height: 130px;
+    width: 130px;
+    top: -45px;
+    left: -28px;
+  }
+  .services .branding-tab .background img.small-circle-bg,
+.services .digital-marketing-tab .background img.small-circle-bg {
+    height: 182px;
+    width: 182px;
+    top: 96px;
+    right: -33px;
+  }
+  .projects .background img.square-bg:nth-of-type(1),
+.projects .background img.square-bg:nth-of-type(3) {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    left: -12px;
+  }
+  .projects .background img.square-bg:nth-of-type(2) {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    top: 638px;
+    right: -60px;
+  }
+  .projects .background img.square-bg:nth-of-type(3) {
+    display: block;
+    top: 1155px;
+    left: -50px;
   }
   .projects .project:last-child {
     margin-bottom: 0;
