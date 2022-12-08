@@ -135,7 +135,7 @@
     display: block;
   }
   .btn.btn-outline {
-    margin-top: 10px;
+    margin-top: 16px;
     margin-left: 0;
   }
 }
@@ -250,13 +250,13 @@ header .navigation .navbar li:last-of-type a:hover {
 }
 @media screen and (max-width: 600px) {
   .nav-tabs .nav-link {
-    font-size: 25px;
+    font-size: 22px;
     line-height: 0;
     padding: 0 !important;
-    margin: 35px 0;
+    margin: 25px auto;
   }
   .nav-tabs .nav-link.active {
-    font-size: 30px;
+    font-size: 24px;
   }
 }
 .title {
@@ -1137,7 +1137,7 @@ footer .copy-right p {
   }
   .banner .banner-title {
     font-size: 35px;
-    line-height: 1.2;
+    line-height: 47px;
   }
   .banner .banner-title .ml8 {
     white-space: nowrap;
@@ -1145,12 +1145,12 @@ footer .copy-right p {
   .banner .banner-title .letter {
     opacity: 1;
   }
-  .services.container,
+  .services,
 .projects.container,
-.client-reviews.container,
-.cta.container {
-    padding-top: 60px;
-    padding-bottom: 60px;
+.client-reviews,
+.cta {
+    padding-top: 70px;
+    padding-bottom: 70px;
   }
   .services .background,
 .projects .background {
@@ -1162,8 +1162,11 @@ footer .copy-right p {
   .projects .project:last-child {
     margin-bottom: 0;
   }
+  .projects .project .project-description h4 {
+    line-height: 20px;
+  }
   .projects .project .project-description h2 {
-    font-size: 25px;
+    font-size: 30px;
     line-height: 30px;
   }
   .client-reviews .owl-carousel .owl-item {
