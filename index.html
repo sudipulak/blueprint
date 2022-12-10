@@ -810,6 +810,14 @@
         once: true,
         disable: "mobile",
       });
+      $(window).on("load", () => {
+        let iOSdevice =
+          !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+        if (iOSdevice)
+          $('[role="tablist"] .nav-link').each((i, e) => {
+            if (!$(e).attr("href")) $(e).attr("href", $(e).data("target"));
+          });
+      });
     </script>
     <!-- Anime Js  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
