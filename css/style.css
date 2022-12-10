@@ -198,7 +198,11 @@ header .navigation .navbar li:last-of-type a:hover {
     display: none;
   }
 }
-.nav-tabs.vertical-tab {
+.nav-tabs {
+  border-bottom: 0px solid transparent !important;
+  z-index: 2;
+}
+.nav-tabs.nav-pills {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -210,7 +214,8 @@ header .navigation .navbar li:last-of-type a:hover {
   position: relative;
   z-index: 1;
 }
-.nav-tabs .nav-link {
+.nav-tabs.nav-pills .nav-link {
+  display: inline-block;
   font-size: 38px;
   font-weight: 800;
   color: #00004B;
@@ -220,11 +225,11 @@ header .navigation .navbar li:last-of-type a:hover {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.nav-tabs .nav-link:hover {
+.nav-tabs.nav-pills .nav-link:hover {
   opacity: 1;
   border-color: transparent;
 }
-.nav-tabs .nav-link.active {
+.nav-tabs.nav-pills .nav-link.active {
   color: #00004B;
   opacity: 1;
   font-size: 44px;
@@ -431,7 +436,7 @@ header .navigation .navbar li:last-of-type a:hover {
   padding-bottom: 80px;
   overflow: hidden;
 }
-.services .nav-tabs li:last-child button {
+.services .nav-tabs li:last-child a {
   margin-bottom: 0;
 }
 .services .web-design-tab {
@@ -445,7 +450,7 @@ header .navigation .navbar li:last-of-type a:hover {
 .services .web-design-tab .background img {
   position: absolute;
   right: 0;
-  z-index: -1;
+  z-index: -2;
 }
 .services .web-design-tab .background img.big-circle-bg {
   top: -105px;
@@ -584,6 +589,9 @@ header .navigation .navbar li:last-of-type a:hover {
   font-weight: 400;
   line-height: 26px;
   color: #333333;
+}
+.services .digital-marketing-tab {
+  position: relative;
 }
 .services .digital-marketing-tab .background {
   width: 100%;
@@ -1447,6 +1455,9 @@ body {
 }
 
 a {
+  text-decoration: none;
+}
+a:hover {
   text-decoration: none;
 }
 
