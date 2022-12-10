@@ -52,3 +52,11 @@ if (window.innerWidth > 600) {
       // delay: (el, i) => 50 * i,
     });
 }
+
+$(window).on("load", () => {
+  let iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+  if (iOS)
+    $('[role="tablist"] .nav-link').each((i, e) => {
+      if (!$(e).attr("href")) $(e).attr("href", $(e).data("target"));
+    });
+});
