@@ -214,7 +214,7 @@ header .navigation .navbar li:last-of-type a:hover {
   position: relative;
   z-index: 1;
 }
-.nav-tabs.nav-pills .nav-link {
+.nav-tabs .nav-link {
   display: inline-block;
   font-size: 38px;
   font-weight: 800;
@@ -225,11 +225,11 @@ header .navigation .navbar li:last-of-type a:hover {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.nav-tabs.nav-pills .nav-link:hover {
+.nav-tabs .nav-link:hover {
   opacity: 1;
   border-color: transparent;
 }
-.nav-tabs.nav-pills .nav-link.active {
+.nav-tabs .nav-link.active {
   color: #00004B;
   opacity: 1;
   font-size: 44px;
@@ -254,11 +254,14 @@ header .navigation .navbar li:last-of-type a:hover {
   }
 }
 @media screen and (max-width: 600px) {
+  .nav-tabs .nav-item {
+    margin: 0 auto;
+  }
   .nav-tabs .nav-link {
     font-size: 22px;
     line-height: 0;
     padding: 0 !important;
-    margin: 25px auto;
+    margin: 25px 0;
   }
   .nav-tabs .nav-link.active {
     font-size: 24px;
@@ -284,7 +287,7 @@ header .navigation .navbar li:last-of-type a:hover {
 
 @media screen and (max-width: 768px) {
   .title {
-    margin-bottom: 80px;
+    margin-bottom: 60px;
   }
 }
 @media screen and (max-width: 650px) {
